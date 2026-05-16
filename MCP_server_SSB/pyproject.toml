@@ -1,0 +1,13 @@
+[project]
+name = "MCP_server_SSB"
+version = "0.1.3"
+description = "MCP Server SSB Lønnstatistikk"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "mcp==1.27.0",
+    "httpx>=0.27",
+]
+
+[project.optional-dependencies]
+dev = ["debugpy==1.8.8"]

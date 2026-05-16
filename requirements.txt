@@ -1,0 +1,23 @@
+# Python-avhengigheter for hele prosjektet (MCP-server + agent + demo-filer).
+#
+# Installer:
+#   py -m venv .venv
+#   .venv\Scripts\activate         # Windows
+#   pip install -r requirements.txt
+
+
+# --- MCP-server (MCP_server_SSB/) ---
+mcp==1.27.0                    # Inneholder også FastMCP (mcp.server.fastmcp.FastMCP)
+httpx>=0.27                    # Async HTTP-klient brukt mot SSB PxWebApi v2
+
+# --- Agent (Agent_API/) ---
+# [extensions]-extras drar inn litellm (kreves for LiteLlm/Ollama-støtte).
+# Uten denne får du: ImportError: LiteLLM support requires: pip install google-adk[extensions]
+google-adk[extensions]>=1.0    # Google Agent Development Kit (Agent, SequentialAgent, McpToolset, LiteLlm)
+requests>=2.31                 # Synkron HTTP brukt av Agent_API/api/client.py mot ADK API-server
+
+# --- Demo-filer (Ignore/) ---
+# requests dekker ogsaa pxwebapi_v2_demo.py og fetch_flat_11656.py.
+
+# --- Utvikling (valgfritt) ---
+debugpy==1.8.8                 # Brukes av VSCode "Debug in Agent Builder"-tasken

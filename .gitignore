@@ -1,0 +1,10 @@
+# python virtual environment
+.venv/
+__pycache__/
+*.egg-info/
+
+
+# Mapper
+Ignore/*
+MCP_server_SSB/inspector*
+Agent_Samling/*

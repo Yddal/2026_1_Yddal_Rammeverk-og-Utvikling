@@ -1,0 +1,702 @@
+{
+  "version": "2.0",
+  "class": "dataset",
+  "label": "11656: Nærings- (88 grupper), kjønns- og aldersfordeling for lønnstakere, jobber og lønn 2016K1-2026K1",
+  "source": "Statistisk sentralbyrå",
+  "updated": "2026-05-07T06:00:00Z",
+  "link": {
+    "related": [
+      {
+        "extension": {
+          "relation": "statistics-homepage",
+          "metaid": "KORTNAVN:arblonn"
+        },
+        "href": "https://www.ssb.no/arblonn",
+        "label": "Statistikkens hjemmeside",
+        "type": "text/html"
+      },
+      {
+        "extension": {
+          "relation": "about-statistics",
+          "metaid": "KORTNAVN:arblonn"
+        },
+        "href": "https://www.ssb.no/arblonn#om-statistikken",
+        "label": "Om statistikken",
+        "type": "text/html"
+      }
+    ]
+  },
+  "note": [
+    "Alle ett-tall og to-tall i tabellen er endret til '0' eller '3' for å ivareta personvernet. Når tallene aggregeres til høyere regionalt nivå, vil summen kunne avvike noe fra det faktiske tallet."
+  ],
+  "role": {
+    "time": [
+      "Tid"
+    ],
+    "metric": [
+      "ContentsCode"
+    ]
+  },
+  "id": [
+    "Kjonn",
+    "Alder",
+    "NACE2007",
+    "ContentsCode",
+    "Tid"
+  ],
+  "size": [
+    3,
+    6,
+    89,
+    9,
+    41
+  ],
+  "dimension": {
+    "Kjonn": {
+      "label": "kjønn",
+      "category": {
+        "index": {
+          "0": 0,
+          "2": 1,
+          "1": 2
+        },
+        "label": {
+          "0": "Begge kjønn",
+          "2": "Kvinner",
+          "1": "Menn"
+        }
+      },
+      "extension": {
+        "elimination": true,
+        "show": "value",
+        "codelists": []
+      },
+      "link": {
+        "describedby": [
+          {
+            "extension": {
+              "Kjonn": "urn:ssb:classification:klass:2"
+            }
+          }
+        ],
+        "related": [
+          {
+            "extension": {
+              "relation": "definitions",
+              "metaid": "urn:ssb:classification:klass:2"
+            },
+            "href": "https://www.ssb.no/klass/klassifikasjoner/2",
+            "label": "Standard for kjønn",
+            "type": "text/html"
+          }
+        ]
+      }
+    },
+    "Alder": {
+      "label": "alder",
+      "category": {
+        "index": {
+          "999A": 0,
+          "-24": 1,
+          "25-39": 2,
+          "40-54": 3,
+          "55-66": 4,
+          "67+": 5
+        },
+        "label": {
+          "999A": "Alle aldre",
+          "-24": "Under 25 år",
+          "25-39": "25-39 år",
+          "40-54": "40-54 år",
+          "55-66": "55-66 år",
+          "67+": "67 år eller eldre"
+        }
+      },
+      "extension": {
+        "elimination": true,
+        "show": "value",
+        "codelists": []
+      }
+    },
+    "NACE2007": {
+      "label": "næring (SN2007)",
+      "category": {
+        "index": {
+          "00-99": 0,
+          "01": 1,
+          "02": 2,
+          "03": 3,
+          "05": 4,
+          "06": 5,
+          "07": 6,
+          "08": 7,
+          "09": 8,
+          "10": 9,
+          "11": 10,
+          "12": 11,
+          "13": 12,
+          "14": 13,
+          "15": 14,
+          "16": 15,
+          "17": 16,
+          "18": 17,
+          "19": 18,
+          "20": 19,
+          "21": 20,
+          "22": 21,
+          "23": 22,
+          "24": 23,
+          "25": 24,
+          "26": 25,
+          "27": 26,
+          "28": 27,
+          "29": 28,
+          "30": 29,
+          "31": 30,
+          "32": 31,
+          "33": 32,
+          "35": 33,
+          "36": 34,
+          "37": 35,
+          "38": 36,
+          "39": 37,
+          "41": 38,
+          "42": 39,
+          "43": 40,
+          "45": 41,
+          "46": 42,
+          "47": 43,
+          "49": 44,
+          "50": 45,
+          "51": 46,
+          "52": 47,
+          "53": 48,
+          "55": 49,
+          "56": 50,
+          "58": 51,
+          "59": 52,
+          "60": 53,
+          "61": 54,
+          "62": 55,
+          "63": 56,
+          "64": 57,
+          "65": 58,
+          "66": 59,
+          "68": 60,
+          "69": 61,
+          "70": 62,
+          "71": 63,
+          "72": 64,
+          "73": 65,
+          "74": 66,
+          "75": 67,
+          "77": 68,
+          "78": 69,
+          "79": 70,
+          "80": 71,
+          "81": 72,
+          "82": 73,
+          "84": 74,
+          "85": 75,
+          "86": 76,
+          "87": 77,
+          "88": 78,
+          "90": 79,
+          "91": 80,
+          "92": 81,
+          "93": 82,
+          "94": 83,
+          "95": 84,
+          "96": 85,
+          "97": 86,
+          "00": 87,
+          "99": 88
+        },
+        "label": {
+          "00-99": "Alle næringer",
+          "01": "Jordbruk og tilhørende tjenester, jakt",
+          "02": "Skogbruk og tilhørende tjenester",
+          "03": "Fiske, fangst og akvakultur",
+          "05": "Bryting av steinkull og brunkull",
+          "06": "Utvinning av råolje og naturgass",
+          "07": "Bryting av metallholdig malm",
+          "08": "Bryting og bergverksdrift ellers",
+          "09": "Tjenester til bergverk og utvinning",
+          "10": "Næringsmiddelindustri",
+          "11": "Drikkevareindustri",
+          "12": "Tobakksindustri",
+          "13": "Tekstilindustri",
+          "14": "Bekledningsindustri",
+          "15": "Lær- og lærvareindustri",
+          "16": "Trelast- og trevareindustri",
+          "17": "Papir- og papirvareindustri",
+          "18": "Trykking, grafisk industri",
+          "19": "Petroleums- og kullvareindustri",
+          "20": "Kjemisk industri",
+          "21": "Farmasøytisk industri",
+          "22": "Gummivare- og plastindustri",
+          "23": "Mineralproduktindustri",
+          "24": "Metallindustri",
+          "25": "Metallvareindustri",
+          "26": "Data- og elektronisk industri",
+          "27": "Elektroteknisk industri",
+          "28": "Maskinindustri",
+          "29": "Motorkjøretøyindustri",
+          "30": "Transportmiddelindustri ellers",
+          "31": "Møbelindustri",
+          "32": "Annen industri",
+          "33": "Maskinreparasjon og -installasjon",
+          "35": "Kraftforsyning",
+          "36": "Vannforsyning",
+          "37": "Håndtering av avløpsvann",
+          "38": "Avfallshåndtering",
+          "39": "Miljørydding og miljørensing",
+          "41": "Oppføring av bygninger",
+          "42": "Anleggsvirksomhet",
+          "43": "Spesialisert bygge- og anleggsvirksomhet",
+          "45": "Handel med og reparasjon av motorvogner",
+          "46": "Agentur- og engroshandel, unntatt med motorvogner",
+          "47": "Detaljhandel, unntatt med motorvogner",
+          "49": "Landtransport og rørtransport",
+          "50": "Sjøfart",
+          "51": "Lufttransport",
+          "52": "Transporttjenester og lagring",
+          "53": "Post og distribusjonsvirksomhet",
+          "55": "Overnattingsvirksomhet",
+          "56": "Serveringsvirksomhet",
+          "58": "Forlagsvirksomhet",
+          "59": "Film- og TV-produksjon, musikkutgivelse",
+          "60": "Radio- og fjernsynskringkasting",
+          "61": "Telekommunikasjon",
+          "62": "IT-tjenester",
+          "63": "Informasjonstjenester",
+          "64": "Finansieringsvirksomhet",
+          "65": "Forsikring og pensjonskasser",
+          "66": "Finans-, forsikringshjelpetjenester",
+          "68": "Omsetning og drift av fast eiendom",
+          "69": "Juridisk og regnskapsmessig tjenesteyting",
+          "70": "Hovedkontortjenester, administrativ rådgivning",
+          "71": "Arkitekter og tekniske konsulenter",
+          "72": "Forskning og utviklingsarbeid",
+          "73": "Reklamevirksomhet og markedsundersøkelser",
+          "74": "Annen faglig, vitenskapelig og teknisk virksomhet",
+          "75": "Veterinærtjenester",
+          "77": "Utleie- og leasingvirksomhet",
+          "78": "Arbeidskrafttjenester",
+          "79": "Reisebyråer og reisearrangører",
+          "80": "Vakttjeneste og etterforsking",
+          "81": "Tjenester tilknyttet eiendomsdrift",
+          "82": "Forretningsmessig tjenesteyting ellers",
+          "84": "Off.adm., forsvar, sosialforsikring",
+          "85": "Undervisning",
+          "86": "Helsetjenester",
+          "87": "Pleie og omsorg i institusjon",
+          "88": "Omsorg uten botilbud, barnehager mv.",
+          "90": "Kunstnerisk virksomhet og underholdning",
+          "91": "Bibliotek, muséer o.a. kulturvirksomhet",
+          "92": "Lotteri og totalisatorspill",
+          "93": "Sports- og fritidsaktiviteter",
+          "94": "Aktiviteter i medlemsorgansiasjoner",
+          "95": "Reparasjon av varer til personlig bruk",
+          "96": "Annen personlig tjenesteyting",
+          "97": "Lønnet arbeid i private husholdninger",
+          "00": "Uoppgitt",
+          "99": "Internasjonale organer"
+        }
+      },
+      "extension": {
+        "elimination": false,
+        "show": "code_value",
+        "codelists": [
+          {
+            "id": "agg_NACE2007arb21",
+            "label": "Næring, hovedgrupper",
+            "type": "Aggregation",
+            "links": [
+              {
+                "rel": "metadata",
+                "hreflang": "no",
+                "href": "https://data.ssb.no/api/pxwebapi/v2/codeLists/agg_NACE2007arb21?lang=no"
+              }
+            ]
+          },
+          {
+            "id": "agg_NACE2007arb22",
+            "label": "Næring, 2-siffernivå",
+            "type": "Aggregation",
+            "links": [
+              {
+                "rel": "metadata",
+                "hreflang": "no",
+                "href": "https://data.ssb.no/api/pxwebapi/v2/codeLists/agg_NACE2007arb22?lang=no"
+              }
+            ]
+          },
+          {
+            "id": "vs_NACE2007arb2",
+            "label": "Næring, alle nivåer ",
+            "type": "Valueset",
+            "links": [
+              {
+                "rel": "metadata",
+                "hreflang": "no",
+                "href": "https://data.ssb.no/api/pxwebapi/v2/codeLists/vs_NACE2007arb2?lang=no"
+              }
+            ]
+          }
+        ]
+      },
+      "link": {
+        "describedby": [
+          {
+            "extension": {
+              "NACE2007": "urn:ssb:classification:klass:6"
+            }
+          }
+        ],
+        "related": [
+          {
+            "extension": {
+              "relation": "definitions",
+              "metaid": "urn:ssb:classification:klass:6"
+            },
+            "href": "https://www.ssb.no/klass/klassifikasjoner/6",
+            "label": "Standard for næringsgruppering (SN)",
+            "type": "text/html"
+          }
+        ]
+      }
+    },
+    "ContentsCode": {
+      "label": "statistikkvariabel",
+      "category": {
+        "index": {
+          "Lonsstakere": 0,
+          "AntArbForhold": 1,
+          "HeltidsEkvMnd": 2,
+          "GjAvtMndlonn": 3,
+          "GjMndlonn": 4,
+          "MedianAvtMndLonn": 5,
+          "MedianMndLonn": 6,
+          "GjAlderJobbLonn": 7,
+          "GjAvtArbtidprUke": 8
+        },
+        "label": {
+          "Lonsstakere": "Antall lønnstakere",
+          "AntArbForhold": "Antall jobber (arbeidsforhold)",
+          "HeltidsEkvMnd": "Antall heltidsekvivalenter (månedsverk)",
+          "GjAvtMndlonn": "Gjennomsnittlig avtalt månedslønn (kr)",
+          "GjMndlonn": "Gjennomsnittlig månedslønn (kr)",
+          "MedianAvtMndLonn": "Median avtalt månedslønn (kr)",
+          "MedianMndLonn": "Median månedslønn (kr)",
+          "GjAlderJobbLonn": "Gjennomsnittlig alder (år)",
+          "GjAvtArbtidprUke": "Gjennomsnittlig avtalt arbeidstid per uke (timer)"
+        },
+        "unit": {
+          "Lonsstakere": {
+            "base": "personer",
+            "decimals": 0
+          },
+          "AntArbForhold": {
+            "base": "arbeidsforhold",
+            "decimals": 0
+          },
+          "HeltidsEkvMnd": {
+            "base": "månedsverk",
+            "decimals": 0
+          },
+          "GjAvtMndlonn": {
+            "base": "kr",
+            "decimals": 0
+          },
+          "GjMndlonn": {
+            "base": "kr",
+            "decimals": 0
+          },
+          "MedianAvtMndLonn": {
+            "base": "kr",
+            "decimals": 0
+          },
+          "MedianMndLonn": {
+            "base": "kr",
+            "decimals": 0
+          },
+          "GjAlderJobbLonn": {
+            "base": "år",
+            "decimals": 1
+          },
+          "GjAvtArbtidprUke": {
+            "base": "timer",
+            "decimals": 1
+          }
+        }
+      },
+      "extension": {
+        "elimination": false,
+        "refperiod": {
+          "Lonsstakere": "Midtmåneden i kvartalet",
+          "AntArbForhold": "Midtmåneden i kvartalet",
+          "HeltidsEkvMnd": "Midtmåneden i kvartalet",
+          "GjAvtMndlonn": "Midtmåneden i kvartalet",
+          "GjMndlonn": "Midtmåneden i kvartalet",
+          "MedianAvtMndLonn": "Midtmåneden i kvartalet",
+          "MedianMndLonn": "Midtmåneden i kvartalet",
+          "GjAlderJobbLonn": "Midtmåneden i kvartalet",
+          "GjAvtArbtidprUke": "Midtmåneden i kvartalet"
+        },
+        "show": "value",
+        "codelists": [],
+        "measuringType": {
+          "Lonsstakere": "Stock",
+          "AntArbForhold": "Stock",
+          "HeltidsEkvMnd": "Average",
+          "GjAvtMndlonn": "Average",
+          "GjMndlonn": "Average",
+          "MedianAvtMndLonn": "Average",
+          "MedianMndLonn": "Average",
+          "GjAlderJobbLonn": "Average",
+          "GjAvtArbtidprUke": "Average"
+        },
+        "priceType": {
+          "Lonsstakere": "NotApplicable",
+          "AntArbForhold": "NotApplicable",
+          "HeltidsEkvMnd": "NotApplicable",
+          "GjAvtMndlonn": "NotApplicable",
+          "GjMndlonn": "NotApplicable",
+          "MedianAvtMndLonn": "NotApplicable",
+          "MedianMndLonn": "NotApplicable",
+          "GjAlderJobbLonn": "NotApplicable",
+          "GjAvtArbtidprUke": "NotApplicable"
+        },
+        "adjustment": {
+          "Lonsstakere": "None",
+          "AntArbForhold": "None",
+          "HeltidsEkvMnd": "None",
+          "GjAvtMndlonn": "None",
+          "GjMndlonn": "None",
+          "MedianAvtMndLonn": "None",
+          "MedianMndLonn": "None",
+          "GjAlderJobbLonn": "None",
+          "GjAvtArbtidprUke": "None"
+        },
+        "alternativeText": {
+          "Lonsstakere": "Antall lønnstakere",
+          "AntArbForhold": "Antall jobber (arbeidsforhold)",
+          "HeltidsEkvMnd": "Antall heltidsekvivalenter (månedsverk)",
+          "GjAvtMndlonn": "Gjennomsnittlig avtalt månedslønn (kr)",
+          "GjMndlonn": "Gjennomsnittlig månedslønn (kr)",
+          "MedianAvtMndLonn": "Median avtalt månedslønn (kr)",
+          "MedianMndLonn": "Median månedslønn (kr)",
+          "GjAlderJobbLonn": "Gjennomsnittlig alder (år)",
+          "GjAvtArbtidprUke": "Gjennomsnittlig avtalt arbeidstid per uke (timer)"
+        }
+      },
+      "link": {
+        "describedby": [
+          {
+            "extension": {
+              "Lonsstakere": "urn:ssb:conceptvariable:vardok:2498",
+              "AntArbForhold": "urn:ssb:conceptvariable:vardok:3394",
+              "MedianAvtMndLonn": "urn:ssb:conceptvariable:vardok:188",
+              "MedianMndLonn": "urn:ssb:conceptvariable:vardok:187"
+            }
+          }
+        ],
+        "related": [
+          {
+            "extension": {
+              "relation": "definitions",
+              "category": "Lonsstakere",
+              "metaid": "urn:ssb:conceptvariable:vardok:2498"
+            },
+            "href": "https://www.ssb.no/a/metadata/conceptvariable/vardok/2498/nb",
+            "label": "Definisjon av Antall lønnstakere.",
+            "type": "text/html"
+          },
+          {
+            "extension": {
+              "relation": "definitions",
+              "category": "AntArbForhold",
+              "metaid": "urn:ssb:conceptvariable:vardok:3394"
+            },
+            "href": "https://www.ssb.no/a/metadata/conceptvariable/vardok/3394/nb",
+            "label": "Definisjon av Antall jobber (arbeidsforhold).",
+            "type": "text/html"
+          },
+          {
+            "extension": {
+              "relation": "definitions",
+              "category": "MedianAvtMndLonn",
+              "metaid": "urn:ssb:conceptvariable:vardok:188"
+            },
+            "href": "https://www.ssb.no/a/metadata/conceptvariable/vardok/188/nb",
+            "label": "Definisjon av Median avtalt månedslønn (kr).",
+            "type": "text/html"
+          },
+          {
+            "extension": {
+              "relation": "definitions",
+              "category": "MedianMndLonn",
+              "metaid": "urn:ssb:conceptvariable:vardok:187"
+            },
+            "href": "https://www.ssb.no/a/metadata/conceptvariable/vardok/187/nb",
+            "label": "Definisjon av Median månedslønn (kr).",
+            "type": "text/html"
+          }
+        ]
+      }
+    },
+    "Tid": {
+      "label": "kvartal",
+      "category": {
+        "index": {
+          "2016K1": 0,
+          "2016K2": 1,
+          "2016K3": 2,
+          "2016K4": 3,
+          "2017K1": 4,
+          "2017K2": 5,
+          "2017K3": 6,
+          "2017K4": 7,
+          "2018K1": 8,
+          "2018K2": 9,
+          "2018K3": 10,
+          "2018K4": 11,
+          "2019K1": 12,
+          "2019K2": 13,
+          "2019K3": 14,
+          "2019K4": 15,
+          "2020K1": 16,
+          "2020K2": 17,
+          "2020K3": 18,
+          "2020K4": 19,
+          "2021K1": 20,
+          "2021K2": 21,
+          "2021K3": 22,
+          "2021K4": 23,
+          "2022K1": 24,
+          "2022K2": 25,
+          "2022K3": 26,
+          "2022K4": 27,
+          "2023K1": 28,
+          "2023K2": 29,
+          "2023K3": 30,
+          "2023K4": 31,
+          "2024K1": 32,
+          "2024K2": 33,
+          "2024K3": 34,
+          "2024K4": 35,
+          "2025K1": 36,
+          "2025K2": 37,
+          "2025K3": 38,
+          "2025K4": 39,
+          "2026K1": 40
+        },
+        "label": {
+          "2016K1": "2016K1",
+          "2016K2": "2016K2",
+          "2016K3": "2016K3",
+          "2016K4": "2016K4",
+          "2017K1": "2017K1",
+          "2017K2": "2017K2",
+          "2017K3": "2017K3",
+          "2017K4": "2017K4",
+          "2018K1": "2018K1",
+          "2018K2": "2018K2",
+          "2018K3": "2018K3",
+          "2018K4": "2018K4",
+          "2019K1": "2019K1",
+          "2019K2": "2019K2",
+          "2019K3": "2019K3",
+          "2019K4": "2019K4",
+          "2020K1": "2020K1",
+          "2020K2": "2020K2",
+          "2020K3": "2020K3",
+          "2020K4": "2020K4",
+          "2021K1": "2021K1",
+          "2021K2": "2021K2",
+          "2021K3": "2021K3",
+          "2021K4": "2021K4",
+          "2022K1": "2022K1",
+          "2022K2": "2022K2",
+          "2022K3": "2022K3",
+          "2022K4": "2022K4",
+          "2023K1": "2023K1",
+          "2023K2": "2023K2",
+          "2023K3": "2023K3",
+          "2023K4": "2023K4",
+          "2024K1": "2024K1",
+          "2024K2": "2024K2",
+          "2024K3": "2024K3",
+          "2024K4": "2024K4",
+          "2025K1": "2025K1",
+          "2025K2": "2025K2",
+          "2025K3": "2025K3",
+          "2025K4": "2025K4",
+          "2026K1": "2026K1"
+        }
+      },
+      "extension": {
+        "elimination": false,
+        "show": "code",
+        "codelists": []
+      }
+    }
+  },
+  "extension": {
+    "px": {
+      "infofile": "None",
+      "tableid": "11656",
+      "decimals": 0,
+      "official-statistics": true,
+      "aggregallowed": false,
+      "copyright": false,
+      "language": "no",
+      "contents": "11656: Lønnstakere og jobber,",
+      "descriptiondefault": false,
+      "heading": [
+        "ContentsCode",
+        "Tid"
+      ],
+      "stub": [
+        "Kjonn",
+        "Alder",
+        "NACE2007"
+      ],
+      "matrix": "11656",
+      "subject-code": "al",
+      "subject-area": "Arbeid og lønn"
+    },
+    "contact": [
+      {
+        "name": "Arbeidsmarked",
+        "organization": "Statistisk sentralbyrå",
+        "phone": "62 88 50 00",
+        "mail": "arbeidsmarked@ssb.no",
+        "raw": " Arbeidsmarked, Statistisk sentralbyrå# +47 62 88 50 00#arbeidsmarked@ssb.no"
+      },
+      {
+        "name": "Knut Snellingen Bye",
+        "organization": "Statistisk sentralbyrå",
+        "phone": "40 81 13 26",
+        "mail": "ksb@ssb.no",
+        "raw": "Knut Snellingen Bye, Statistisk sentralbyrå# +47 40 81 13 26#ksb@ssb.no"
+      },
+      {
+        "name": "Magnus Berglund Johnsen",
+        "organization": "Statistisk sentralbyrå",
+        "phone": "40 90 23 75",
+        "mail": "mjo@ssb.no",
+        "raw": "Magnus Berglund Johnsen, Statistisk sentralbyrå# +47 40 90 23 75#mjo@ssb.no"
+      },
+      {
+        "name": "Vilde Røv",
+        "organization": "Statistisk sentralbyrå",
+        "phone": "90 47 14 08",
+        "mail": "vilde.rov@ssb.no",
+        "raw": "Vilde Røv, Statistisk sentralbyrå# +47 90 47 14 08#vilde.rov@ssb.no"
+      }
+    ]
+  },
+  "value": []
+}

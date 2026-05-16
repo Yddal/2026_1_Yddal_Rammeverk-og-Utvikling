@@ -1,0 +1,8 @@
+{
+  "servers": {
+    "MCP_server_SSB": {
+      "type": "http",
+      "url": "http://localhost:8000/mcp"
+    }
+  }
+}
